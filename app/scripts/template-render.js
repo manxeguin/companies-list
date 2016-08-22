@@ -55,7 +55,7 @@
                 throw 'jQuery not loaded';   
             }
 
-            $( 'body' ).append( '<div id=" '+id+'" class="modal"></div>' );
+            $( 'body' ).append( '<div id="'+id+'" class="modal"></div>' );
   
         }                  
         

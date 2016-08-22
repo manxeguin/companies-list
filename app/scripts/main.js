@@ -12,14 +12,14 @@
 		tr.appendConfirmationModal(confirmationModalId);
 
 		var refreshCompaniesList = function (){
-			tr.loadTemplate('/templates/card-company.html',data,'#companies-list-section');
+			tr.loadTemplate('templates/card-company.html',data,'#companies-list-section');
 		}
 
 		window.deleteCompany = function(id){
 			console.log('deleteCompany-->',id);
 			var elementToDelete = $.grep(data.companies, function(e){ return e.id == id; });
 			companyToDelete = elementToDelete[0]; 
-			var promise = tr.loadTemplate('/templates/confirmation.html',companyToDelete,'#'+confirmationModalId);
+			var promise = tr.loadTemplate('templates/confirmation.html',companyToDelete,'#'+confirmationModalId);
 			promise.done(function(c){
                 $('#modal-confirmation').openModal();
             });
@@ -40,7 +40,7 @@
 			}
 		}
 
-	    $.getJSON('/data/listing.json', {}, function(response, textStatus, jqXHr) {
+	    $.getJSON('data/listing.json', {}, function(response, textStatus, jqXHr) {
 
 	        data = {
 	        	companies : response
