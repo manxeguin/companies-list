@@ -1,2 +1,0 @@
-# companies-list
-companies list
