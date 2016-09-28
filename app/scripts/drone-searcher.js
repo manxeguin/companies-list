@@ -45,7 +45,7 @@
 
     /**
      * Funcion que añade el id actual a la solución y lo marca como visitado, y se llama recursivamente
-     * para las posiciones adyacentes si puede
+     * para las posiciones adyacentes si puede hasta recorrer todo el arbol (Backtracking)
      *
      * @param {Number} id  id a comprobar.
      * @param {Number} x - posición x.
