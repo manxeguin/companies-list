@@ -108,6 +108,9 @@
     }
     
     DroneSearcher.init.prototype = DroneSearcher.prototype;
+
+
+
     
     if ( typeof module === "object" && module && typeof module.exports === "object" ) {
         module.exports = DroneSearcher;
